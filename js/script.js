@@ -15,19 +15,24 @@ $(document).ready(function(){
 							  <span class="checked-task"><i class="fa fa-check" aria-hidden="true"></i></span>\
 					          <span class="remove-task"><i class="fa fa-trash-o" aria-hidden="true"></i></span>\
 					        </li>');
-
-			$('.input-add-task').focus();	
 			return false;
 		}
 
 
 	});
 
-	$('.checked-task').click(function(){
-		$(this).parent().find('.name-task').toggleClass('name-task-toggle');
-	});
+	for (var i = 0; i < close.length; i++) {
+	  	close[i].onclick = function() {
+	    var div = this.parentElement;
+	    div.style.display = "none";
+	  }
+	}
 
-	$('.remove-task').click(function(){
-		$(this).parent().hide('slow');
-	});	
+	$(document).on('click','.checked-task',function(){
+    $(this).parent().find('.name-task').toggleClass('name-task-toggle');
+});
+
+$(document).on('click','.remove-task',function(){
+    $(this).parent().hide('slow');
+});
 });
