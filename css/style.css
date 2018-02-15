@@ -69,6 +69,12 @@ footer{
 	width: 30%;
 	background-color: #4CAF50;
 	color: #ffffff;
+	transition: .1s;
+	cursor: pointer;
+}
+
+.add-task form button:hover{
+	opacity: .8;
 }
 
 .alert-message{

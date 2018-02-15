@@ -14,7 +14,9 @@ $(document).ready(function(){
 			$('ul').append('<li><span class="name-task">'+ taskName +'</span>\
 							  <span class="checked-task"><i class="fa fa-check" aria-hidden="true"></i></span>\
 					          <span class="remove-task"><i class="fa fa-trash-o" aria-hidden="true"></i></span>\
-					        </li>');	
+					        </li>');
+			
+			$('.input-add-task').focus();	
 		}
 
 
