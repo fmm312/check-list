@@ -1,5 +1,5 @@
-
-$(document).ready(function(){	
+$(document).ready(function(){
+	/* add task */	
 	$('.btn-add').click(function(){
 		var taskName = $('.input-add-task').val();
 		if(taskName == ''){
@@ -17,22 +17,15 @@ $(document).ready(function(){
 					        </li>');
 			return false;
 		}
-
-
 	});
 
-	for (var i = 0; i < close.length; i++) {
-	  	close[i].onclick = function() {
-	    var div = this.parentElement;
-	    div.style.display = "none";
-	  }
-	}
-
+	/* check task */	
 	$(document).on('click','.checked-task',function(){
-    $(this).parent().find('.name-task').toggleClass('name-task-toggle');
-});
+	    $(this).parent().find('.name-task').toggleClass('name-task-toggle');
+	});
 
-$(document).on('click','.remove-task',function(){
-    $(this).parent().hide('slow');
-});
+	/* remove task */	
+	$(document).on('click','.remove-task',function(){
+	    $(this).parent().hide('slow');
+	});
 });
