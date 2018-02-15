@@ -15,19 +15,19 @@ $(document).ready(function(){
 							  <span class="checked-task"><i class="fa fa-check" aria-hidden="true"></i></span>\
 					          <span class="remove-task"><i class="fa fa-trash-o" aria-hidden="true"></i></span>\
 					        </li>');
-			
+
 			$('.input-add-task').focus();	
+			return false;
 		}
 
 
 	});
 
+	$('.checked-task').click(function(){
+		$(this).parent().find('.name-task').toggleClass('name-task-toggle');
+	});
+
 	$('.remove-task').click(function(){
 		$(this).parent().hide('slow');
-	});
-
-
-	$('.checked-task').click(function(){
-		$('.name-task').toggleClass('name-task-toggle');
-	});
+	});	
 });
