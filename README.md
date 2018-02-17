@@ -9,4 +9,4 @@ Software que cria uma lista de tarefas diárias, permite administrar tarefas da 
 - CSS
 - JavaScript (jQuery)
 
-Desenvolvido por **[Felipe Menezes Magalhães](https://fmm312.github.io/)**
+Desenvolvido por **Felipe Menezes Magalhães**
