@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	/* add task */	
 	$('.btn-add').click(function(){
 		var taskName = $('.input-add-task').val();
 		if(taskName == ''){
@@ -19,12 +18,10 @@ $(document).ready(function(){
 		}
 	});
 
-	/* check task */	
 	$(document).on('click','.checked-task',function(){
 	    $(this).parent().find('.name-task').toggleClass('name-task-toggle');
 	});
 
-	/* remove task */	
 	$(document).on('click','.remove-task',function(){
 	    $(this).parent().hide('slow');
 	});

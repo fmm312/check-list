@@ -1,75 +1,67 @@
-/* --------------------
-		GERAL
-----------------------*/
-body{
+body {
 	background-color: #212121;
-
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
 }
 
-h1{
+h1 {
 	font-size: 48px;
 	color: #ffffff;
 }
 
-h2{
+h2 {
 	font-size: 28px;
 	color: #ffffff;
 }
 
-input, button{
+input, button {
 	font-size: 16px;
 	height: 50px;
 	box-sizing: border-box;
 	border: none;
 }
 
-header{
+header {
 	text-align: center;
 	padding-top: 20px;
 }
 
-footer{
+footer {
 	text-align: center;
 	color: #ffffff;
 	width: 100%;
 	padding: 30px 0px;
 }
 
-footer a{
+footer a {
 	color: #ffffff;
 	text-decoration: none;
 }
 
-
-/* --------------------
-		ADD TASK
-----------------------*/
-.add-task{
+.add-task {
 	width: 50%;
 	position: relative;
 	left: 25%;
 	margin: 40px 0px;
 }
 
-.add-task form {
+.add-task form  {
 	display: flex;
 	justify-content: space-between;
 }
 
-.input-add-task{
+.input-add-task {
 	color: #333;
 	font-size: 18px;
 }
 
-.add-task form input{
+.add-task form input {
 	width: 70%;
 	padding: 12px;
 }
 
-.add-task form button{
+.add-task form button {
 	width: 30%;
 	background-color: #4CAF50;
 	color: #ffffff;
@@ -77,31 +69,26 @@ footer a{
 	cursor: pointer;
 }
 
-.add-task form button:hover{
+.add-task form button:hover {
 	opacity: .8;
 }
 
-.alert-message{
+.alert-message {
 	color: #F44336;
 	font-size: 18px;
 }
 
-
-/* --------------------
-		TASK LIST
-----------------------*/
 .task-list {
 	width: 50%;
 	position: relative;
 	left: 25%;
-	
 }
 
-.task-list ul{
+.task-list ul {
 	padding: 0px;	
 }
 
-.task-list ul li{
+.task-list ul li {
 	color: #555555;
 	box-sizing: border-box;
 	margin-bottom: 6px;
@@ -111,7 +98,7 @@ footer a{
 	justify-content: space-between;
 }
 
-.task-list ul li .name-task{
+.task-list ul li .name-task {
 	background-color: #ffffff;
 	box-sizing: border-box;
 	padding: 12px;
@@ -120,13 +107,13 @@ footer a{
 	color: #212121;
 }
 
-.name-task-toggle{
+.name-task-toggle {
 	text-decoration: line-through;
 	background-color: #9E9E9E!important;
 	color: #424242!important;
 }
 
-.task-list ul li .checked-task{
+.task-list ul li .checked-task {
 	background-color: #4CAF50;
 	box-sizing: border-box;
 	width: 10%;
@@ -136,11 +123,11 @@ footer a{
 	transition: .1s;
 }
 
-.task-list ul li .checked-task:hover{
+.task-list ul li .checked-task:hover {
 	opacity: .8;
 }
 
-.task-list ul li .remove-task{
+.task-list ul li .remove-task {
 	background-color: #F44336;
 	box-sizing: border-box;
 	width: 10%;
@@ -150,30 +137,26 @@ footer a{
 	transition: .1s;
 }
 
-.task-list ul li .remove-task:hover{
+.task-list ul li .remove-task:hover {
 	opacity: .8;
 }
 
-.task-list ul li .fa{
+.task-list ul li .fa {
 	color: #ffffff;
 	font-size: 20px;
 }
 
-
-/* ---------------------------
-		Responsive
------------------------------*/
-@media(max-width: 1024px){
-	.add-task, .task-list{
+@media(max-width: 1024px) {
+	.add-task, .task-list {
 	    width: 90%;
 	    left: 5%;
 	}
 
-	.name-task{
+	.name-task {
 		width: 70%;
 	}
 
-	.task-list ul li .checked-task, .task-list ul li .remove-task{
+	.task-list ul li .checked-task, .task-list ul li .remove-task {
 		width: 15%;
 	}
 }
